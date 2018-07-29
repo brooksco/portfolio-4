@@ -1,0 +1,60 @@
+// Title
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin: $spacing-large 0;
+
+	&__title {
+		margin: 0;
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		@include small {
+			margin-bottom: $spacing-small;
+		}
+	}
+
+	@include small {
+		flex-direction: column;
+	}
+}
+
+// Navigation
+
+.main-navigation {
+	display: block;
+
+	ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		li {
+			margin: 0 0 0 $spacing-small;
+
+			a {
+				text-decoration: none;
+				color: $color__text-main;
+			}
+		}
+	}
+
+	@include small {
+
+		ul {
+
+			li {
+				margin: 0 $spacing-small 0 0;
+			}
+		}
+	}
+}
+
+.current-menu-item {
+	font-weight: 700;
+}
+

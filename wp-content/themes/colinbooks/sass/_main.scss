@@ -1,0 +1,87 @@
+// Main
+.hero-text {
+  margin: #{$spacing-large * 1.5} 0 $spacing-xlarge 0;
+
+  p {
+    font-size: 6vw;
+    max-width: 1000px;
+    font-family: 'Raleway';
+    //font-family: 'georgia';
+
+    @include medium {
+      font-size: 8vw;
+    }
+
+    @include small {
+      font-size: 10vw;
+    }
+  }
+}
+
+// Posts on home
+.posts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: $spacing-medium;
+
+  @include medium {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include small {
+    grid-template-columns: 1fr;
+  }
+}
+
+.post {
+
+  &__title {
+    margin-bottom: .5rem;
+  }
+
+  a {
+    color: $color__text-main;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  p {
+    font-size: $font-size-small;
+  }
+
+  img {
+    margin-bottom: 1rem;
+  }
+}
+
+// Individual post pages
+.single {
+
+  .post {
+
+    p {
+      font-size: $font-size-medium;
+    }
+
+    img {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.entry-content {
+
+  a {
+    margin-right: $spacing-small;
+  }
+}
+
+.posted-on {
+  font-weight: 700;
+}

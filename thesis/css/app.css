@@ -1,0 +1,155 @@
+body {
+	font-family: "Georgia", serif;
+	line-height: 1.6;
+	font-size: 16px;
+	color: #0a0a0a;
+	margin: auto;
+	padding: 0 32px;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: #1779ba;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Aria", sans-serif;
+	margin: 1em 0;
+	text-align: center;
+}
+
+h3 {
+	font-family: "Georgia", serif;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 1rem;
+	border-radius: 0;
+}
+
+table td {
+	border: 1px solid #c7c7c7;
+}
+
+table p {
+	margin: 0;
+}
+
+tbody tr:nth-child(even) {
+	border-bottom: 0;
+	background-color: #f1f1f1;
+}
+
+tbody td {
+	padding: .5rem .625rem .625rem;
+}
+
+figure {
+	margin: 2em 0;
+}
+
+figcaption {
+	font-size: .9em;
+	margin: 1em 0;
+}
+
+img {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+.thesis {
+	overflow: hidden;
+	max-width: 800px;
+	margin: auto;
+}
+
+.thesis-navigation {
+	position: sticky;
+	top: 0;
+	background: rgba(255, 255, 255, .9);
+}
+
+.thesis-navigation ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.thesis-navigation li {
+	padding: 12px;
+}
+
+.thesis-navigation li a {
+	/*text-decoration: none;*/
+}
+
+.thesis__head {
+	text-align: center;
+}
+
+.thesis__references {
+	margin: 5em 0;
+}
+
+.table-of-contents p {
+	overflow: hidden;
+	white-space: nowrap;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.table-of-contents p:after {
+	content: ".........................................................................................................................................................................................................."
+
+}
+
+.table-of-contents__level-one {
+	margin-left: 0;
+}
+
+.table-of-contents__level-two {
+	margin-left: 2em;
+}
+
+.table-of-contents--level-three {
+	margin-left: 4em;
+}
+
+.table-wrapper {
+	margin: 2em 0;
+	overflow: scroll;
+}
+
+.table--no-color tr:nth-child(even) {
+	background-color: #fff;
+}
+
+@media all and (max-width: 800px) {
+	
+	.thesis-navigation li {
+		padding: 4px;
+	}
+}
+
+@media all and (max-width: 400px) {
+	
+	.thesis-navigation {
+		display: none;
+	}
+}

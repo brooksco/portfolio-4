@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,600');
+//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+
+
+
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  font-size: $base-font-size;
+  //font-family: $font__main;
+  line-height: $font__line-height-body;
+  color: $color__text-main;
+
+  font-family: 'Roboto', sans-serif;
+  //font-family: 'Open Sans', sans-serif;
+  //font-family: 'arial';
+  //font-family: 'Source Sans Pro';
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  //font-family: 'Raleway';
+  font-weight: 600;
+  clear: both;
+  margin: 0 0 1.5rem 0;
+}
+
+h1 {
+  font-size: $font-size-xlarge;
+}
+
+p {
+  font-size: $font-size-medium;
+  font-weight: 400;
+  margin: 0 0 1.5rem 0;
+  max-width: $paragraph-max-width;
+}
+
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 1.5rem;
+}
+
+address {
+  margin: 0 0 1.5rem;
+}
+
+big {
+  font-size: 125%;
+}
+
