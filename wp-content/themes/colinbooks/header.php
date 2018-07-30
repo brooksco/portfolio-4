@@ -39,27 +39,7 @@ dmmmmmmd+.      hmmmmm:     +dmdo-` .hmmmmmd.
 </head>
 
 <body <?php body_class(); ?>>
-	<header class="header">
-		<?php the_custom_logo(); ?>
-		<h2 class="header__title">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-			<?php if ( is_front_page() ) { ?><br>Digital @ Whitney Museum<? } ?>
-		</h2>
-		<?php
-		$colinbooks_description = get_bloginfo( 'description', 'display' );
-		if ( $colinbooks_description || is_customize_preview() ) :
-			?>
-			<p class="site-description"><?php echo $colinbooks_description; /* WPCS: xss ok. */ ?></p>
-		<?php endif; ?>
-
-		<nav class="main-navigation">
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
+	
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
