@@ -3,4 +3,5 @@ node_modules/
 
 # Wordpress
 wp-content/uploads
+wp-content/plugins
 wp-config.php
