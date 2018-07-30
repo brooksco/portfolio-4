@@ -43,7 +43,7 @@
   }
 
   a {
-    color: $color__text-main;
+    color: $color-text;
     text-decoration: none;
 
     &:hover {
@@ -84,4 +84,13 @@
 
 .posted-on {
   font-weight: 700;
+}
+
+.p5 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }

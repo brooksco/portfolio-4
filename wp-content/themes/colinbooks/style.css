@@ -376,7 +376,7 @@ body {
   /* Fallback for when there is no custom background color defined. */
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
-  max-width: calc($max-width + 16vw);
+  max-width: calc(1200px + 16vw);
   margin: auto;
   padding: 0 8vw 32px 8vw; }
 
@@ -533,6 +533,14 @@ a {
 
 .posted-on {
   font-weight: 700; }
+
+.p5 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
 
 .page-content .wp-smiley,
 .entry-content .wp-smiley,

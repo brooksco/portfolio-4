@@ -1,60 +1,88 @@
-<?php
-/**
- * The template for displaying 404 pages (not found)
- *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
- * @package colinbooks
- */
+<!DOCTYPE html>
+<html>
+<head>
+    <title>What is lost can be found again (404)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
 
-get_header();
-?>
+        body {
+            background-color: #242b2b;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Roboto', arial, sans-serif;
+            margin: 0;
+        }
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            color: white;
+        }
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'colinbooks' ); ?></h1>
-				</header><!-- .page-header -->
+        p {
+            font-size: 1.5em;
+            line-height: 1.5em;
+            margin: .5em 0 0 0;
+        }
 
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'colinbooks' ); ?></p>
+        #bear-bearrier {
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 2em 0 2em;
+        }
 
-					<?php
-					get_search_form();
+        #andy {
+            width: 250px;
+            float: left;
+            display: inline;
+            margin: 0 2em .5em 0;
+        }
 
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
+        @media (max-width: 620px) {
+            #bear-bearrier {
+                margin-top: 1.2em;
+                display: block;
+                height: auto;
+            }
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'colinbooks' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-							?>
-						</ul>
-					</div><!-- .widget -->
+            #bearror-of-bad-news {
+                margin: 1.2em 0 1.2em 0;
+            }
 
-					<?php
-					/* translators: %1$s: smiley */
-					$colinbooks_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'colinbooks' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$colinbooks_archive_content" );
+            #andy {
+                display: block;
+                float: none;
+                margin: auto;
+            }
 
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
+            h1 {
+                font-size: 3em;
+            }
 
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
+            p {
+                font-size: 1.1em;
+            }
+        }
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+    </style>
+</head>
 
-<?php
-get_footer();
+<body>
+
+<div id="bear-bearrier">
+    <a href="/">
+        <img id="andy" src="<?php echo get_template_directory_uri(); ?>/img/404-bear.png">
+    </a>
+
+    <div id="bearror-of-bad-news">
+        <h1>Ruh roh.</h1>
+        <p>The page that maybe should be here seems to not be here. You might have mistyped something, or the page might
+            have become lost. But remember, we are <em>alive</em>.</p>
+    </div>
+</div>
+
+</body>
+</html>
