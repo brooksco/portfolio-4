@@ -6,7 +6,10 @@
     font-size: 6vw;
     max-width: 1000px;
     font-family: 'Raleway';
-    //font-family: 'georgia';
+
+    @include xlarge {
+      font-size: 5rem;
+    }
 
     @include medium {
       font-size: 8vw;

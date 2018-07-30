@@ -486,6 +486,9 @@ a {
     font-size: 6vw;
     max-width: 1000px;
     font-family: 'Raleway'; }
+    @media (min-width: 1200px) {
+      .hero-text p {
+        font-size: 5rem; } }
     @media (min-width: 600px) and (max-width: 899px) {
       .hero-text p {
         font-size: 8vw; } }
