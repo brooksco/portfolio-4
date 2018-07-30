@@ -519,7 +519,8 @@ a {
 .post p {
   font-size: 1rem; }
 
-.post img {
+.post img,
+.post .featured-video-plus {
   margin-bottom: 1rem; }
 
 .single .post p {
