@@ -507,27 +507,27 @@ a {
     .posts {
       grid-template-columns: 1fr; } }
 
-.post__title {
-  margin-bottom: .5rem; }
+.post {
+  margin-bottom: 64px; }
+  .post__title {
+    margin-bottom: .5rem; }
+  .post a {
+    color: #ffffff;
+    text-decoration: none; }
+    .post a:hover {
+      opacity: 1; }
+  .post p {
+    font-size: 1rem; }
+  .post img,
+  .post .featured-video-plus {
+    margin-bottom: 1rem; }
 
-.post a {
-  color: #ffffff;
-  text-decoration: none; }
-  .post a:hover {
-    opacity: 1; }
-
-.post p {
-  font-size: 1rem; }
-
-.post img,
-.post .featured-video-plus {
-  margin-bottom: 1rem; }
-
-.single .post p {
-  font-size: 1.25rem; }
-
-.single .post img {
-  margin-bottom: 1.5rem; }
+.single .post {
+  margin-bottom: 0; }
+  .single .post p {
+    font-size: 1.25rem; }
+  .single .post img {
+    margin-bottom: 1.5rem; }
 
 .entry-content a {
   margin-right: 16px; }
