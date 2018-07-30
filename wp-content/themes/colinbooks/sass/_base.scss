@@ -14,7 +14,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	max-width: calc(#{$max-width} + #{$body-padding * 2});
 	margin: auto;
-	padding: 0 $body-padding $spacing-medium $body-padding;
+	padding: 0 $body-padding;
 }
 
 hr {
@@ -66,7 +66,8 @@ table {
 }
 
 a {
-	color: $color-link;
+	color: $color-blue;
+	transition: $all-transition;
 
 	&:hover,
 	&:active {

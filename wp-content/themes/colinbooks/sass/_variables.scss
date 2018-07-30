@@ -1,24 +1,25 @@
 // Variables
 
 // Colors
-
 $color-background: #000;
 $color-background-hr: #ccc;
 
 $color-link: royalblue;
 $color-link-hover: midnightblue;
 
+$color-blue: #4169e1;
+$color-pink: #e82199;
+$color-red-pink: #e14169;
+
 $color-text: #ffffff;
 $color-text-gray: #adadad;
 
 // Typography
-
 $font__main: sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__line-height-body: 1.4;
 
 // Layout
-
 $medium-min-width: 600px;
 $large-min-width: 900px;
 $xlarge-min-width: 1200px;
@@ -32,21 +33,20 @@ $max-width: 1200px;
 $body-padding: 8vw;
 
 $columns: (
-	1: 100%,
-	2: 50%,
-	3: 33.33%,
-	4: 25%,
-	5: 20%,
-	6: 16.66%,
-	7: 14.28%,
-	8: 12.5%,
-	9: 11.11%
+        1: 100%,
+        2: 50%,
+        3: 33.33%,
+        4: 25%,
+        5: 20%,
+        6: 16.66%,
+        7: 14.28%,
+        8: 12.5%,
+        9: 11.11%
 );
 
 $columns__margin: 3.8%;
 
 // Fonts
-
 $paragraph-max-width: 800px;
 
 $base-font-size: 16px;
@@ -54,3 +54,6 @@ $font-size-small: 1rem;
 $font-size-medium: 1.25rem;
 $font-size-large: 2rem;
 $font-size-xlarge: 3rem;
+
+// Transitions
+$all-transition: all 200ms;

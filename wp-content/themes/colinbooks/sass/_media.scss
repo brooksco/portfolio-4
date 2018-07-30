@@ -48,7 +48,7 @@ object {
 	opacity: 0;
 	width: calc(100% + #{$body-padding * 2});
 	margin: $spacing-large 0 0 -#{$body-padding};
-	transition: all 200ms;
+	transition: $all-transition;
 
 	// &--initial {
 	// 	display: none;

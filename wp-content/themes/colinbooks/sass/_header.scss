@@ -1,60 +1,61 @@
 // Title
 .header {
-	display: flex;
-	justify-content: space-between;
-	margin: $spacing-large 0;
+  display: flex;
+  justify-content: space-between;
+  margin: $spacing-large 0;
 
-	&__title {
-		margin: 0;
+  &__title {
+    margin: 0;
 
-		a {
-			text-decoration: none;
-			color: inherit;
-		}
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-		@include small {
-			margin-bottom: $spacing-small;
-		}
-	}
+    @include small {
+      margin-bottom: $spacing-small;
+    }
+  }
 
-	@include small {
-		flex-direction: column;
-	}
+  @include small {
+    flex-direction: column;
+    margin: $spacing-medium 0;
+  }
 }
 
 // Navigation
 
 .main-navigation {
-	display: block;
+  display: block;
 
-	ul {
-		display: flex;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 
-		li {
-			margin: 0 0 0 $spacing-small;
+    li {
+      margin: 0 0 0 $spacing-small;
 
-			a {
-				text-decoration: none;
-				color: $color-text;
-			}
-		}
-	}
+      a {
+        text-decoration: none;
+        color: $color-text;
+      }
+    }
+  }
 
-	@include small {
+  @include small {
 
-		ul {
+    ul {
 
-			li {
-				margin: 0 $spacing-small 0 0;
-			}
-		}
-	}
+      li {
+        margin: 0 $spacing-small 0 0;
+      }
+    }
+  }
 }
 
 .current-menu-item {
-	font-weight: 700;
+  font-weight: 700;
 }
 
