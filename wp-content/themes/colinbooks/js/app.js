@@ -25,13 +25,14 @@ $(document).ready(function () {
     // setup();
 });
 
+let width = window.innerWidth;
+let height = window.innerHeight;
+let drops = [];
+let angle = 0;
+let dropCount = 0;
+
 // P5 drawing on homepage only
 if (window.location.pathname == '/') {
-    let width = window.innerWidth;
-    let height = window.innerHeight;
-    let drops = [];
-    let angle = 0;
-    let dropCount = 0;
 
     function startingX() {
         return random(-(width / 4), width + (width / 4));
@@ -56,13 +57,16 @@ if (window.location.pathname == '/') {
 
     function setup() {
         const canvas = createCanvas(width, height);
-        canvas.parent('p5');
+        if (window.location.pathname == '/') canvas.parent('p5');
         frameRate(60);
 
         angle = random(-PI / 16, PI / 16);
         dropCount = random(0, width / 2);
 
         setupDrops();
+
+        const wrapper = document.querySelector('.p5');
+        if (wrapper) wrapper.classList.add('active');
     }
 
 
@@ -96,7 +100,6 @@ if (window.location.pathname == '/') {
         width = window.innerWidth;
         height = window.innerHeight;
         dropCount = random(0, width / 2);
-        // setupDrops();
         resizeCanvas(windowWidth, windowHeight);
     }
 }
