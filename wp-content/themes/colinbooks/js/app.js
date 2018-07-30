@@ -30,6 +30,8 @@ let height = window.innerHeight;
 let drops = [];
 let angle = 0;
 let dropCount = 0;
+let strokeAlpha = 64;
+let isMobile = window.innerWidth < 600;
 
 // P5 drawing on homepage only
 if (window.location.pathname == '/') {
@@ -40,6 +42,10 @@ if (window.location.pathname == '/') {
 
     function startingY() {
         return random(height) - height;
+    }
+
+    function updateStroke() {
+        isMobile ? strokeAlpha = 80 : strokeAlpha = 64;
     }
 
     function setupDrops() {
@@ -58,6 +64,7 @@ if (window.location.pathname == '/') {
     function setup() {
         const canvas = createCanvas(width, height);
         if (window.location.pathname == '/') canvas.parent('p5');
+        updateStroke();
         frameRate(60);
 
         angle = random(-PI / 16, PI / 16);
@@ -72,7 +79,7 @@ if (window.location.pathname == '/') {
 
     function draw() {
         background(0);
-        stroke(255, 255, 255, 64);
+        stroke(255, 255, 255, strokeAlpha);
         for (let i = 0; i < drops.length; i++) {
             let tailX = drops[i].tail * sin(-angle) + drops[i].x;
 
@@ -99,7 +106,9 @@ if (window.location.pathname == '/') {
     function windowResized() {
         width = window.innerWidth;
         height = window.innerHeight;
+        isMobile = window.innerWidth < 600
         dropCount = random(0, width / 2);
+        updateStroke();
         resizeCanvas(windowWidth, windowHeight);
     }
 }
