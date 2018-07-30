@@ -1,3 +1,6 @@
 [submodule "police"]
 	path = police
 	url = git@github.com:brooksco/policeShootings.git
+[submodule "artistic-development"]
+	path = artistic-development
+	url = git@github.com:brooksco/artisticdevelopment.git
