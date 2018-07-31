@@ -16,13 +16,12 @@ var $gallery = $('.gallery').isotope({
 
 $gallery.one('arrangeComplete', function () {
     console.log('arrange done, just this one time');
+    $gallery.isotope();
 });
 
 $(document).ready(function () {
     $gallery.isotope();
     $gallery.addClass('active');
-
-    // setup();
 });
 
 let width = window.innerWidth;
