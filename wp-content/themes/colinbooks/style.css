@@ -495,6 +495,15 @@ a {
 .current-menu-item {
   font-weight: 700; }
 
+.main {
+  position: relative; }
+
+.post-edit-link {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  text-decoration: none; }
+
 .hero-text {
   margin: 96px 0 128px 0; }
   .hero-text p {

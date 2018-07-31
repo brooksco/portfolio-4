@@ -15,18 +15,20 @@
 get_header();
 ?>
 
-		<main class="main">
+    <main class="main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+        <?php
+        while (have_posts()) :
+            the_post();
 
-			the_content();
+            the_content();
 
-		endwhile; // End of the loop.
-		?>
+        endwhile; // End of the loop.
 
-		</main><!-- #main -->
+        edit_post_link('Edit');
+        ?>
+
+    </main><!-- #main -->
 
 <?php
 get_sidebar();

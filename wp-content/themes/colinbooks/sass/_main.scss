@@ -1,4 +1,15 @@
 // Main
+.main {
+  position: relative;
+}
+
+.post-edit-link {
+  position: fixed;
+  bottom: $spacing-small;
+  right: $spacing-small;
+  text-decoration: none;
+}
+
 .hero-text {
   margin: #{$spacing-large * 1.5} 0 $spacing-xlarge 0;
 
