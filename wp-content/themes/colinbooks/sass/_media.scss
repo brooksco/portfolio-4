@@ -92,3 +92,12 @@ object {
 	display: block;
 }
 
+// Fancybox overrides
+.fancybox-bg {
+	background: $color-background !important;
+}
+
+.fancybox-button {
+	background: none !important;
+}
+

@@ -635,6 +635,12 @@ object {
 .gallery-caption {
   display: block; }
 
+.fancybox-bg {
+  background: #000 !important; }
+
+.fancybox-button {
+  background: none !important; }
+
 .alignleft {
   display: inline;
   float: left;
