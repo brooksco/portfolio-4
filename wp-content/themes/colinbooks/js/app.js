@@ -4,18 +4,17 @@ $.fancybox.defaults.buttons = [
 
 $.fancybox.defaults.infobar = false;
 
-var $gallery = $('.gallery').isotope({
+const $gallery = $('.gallery').isotope({
     itemSelector: '.gallery-item',
     percentPosition: true,
 });
 
-// $gallery.one('arrangeComplete', function () {
-//     console.log('arrange done, just this one time');
-// });
+$gallery.one('arrangeComplete', function () {
+    $gallery.addClass('active');
+});
 
 $(document).ready(function () {
     $gallery.isotope();
-    $gallery.addClass('active');
 });
 
 let width = window.innerWidth;
