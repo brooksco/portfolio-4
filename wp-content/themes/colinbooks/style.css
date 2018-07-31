@@ -31,7 +31,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  */
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,600");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,600");
-@import url(../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css);
+@import url(./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css);
 html {
   line-height: 1.15;
   /* 1 */
