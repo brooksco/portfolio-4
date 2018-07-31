@@ -639,7 +639,12 @@ object {
   background: #000 !important; }
 
 .fancybox-button {
-  background: none !important; }
+  background: none !important;
+  width: 64px !important;
+  height: 64px !important; }
+
+.fancybox-navigation .fancybox-button {
+  top: calc(50% - 32px) !important; }
 
 .alignleft {
   display: inline;
