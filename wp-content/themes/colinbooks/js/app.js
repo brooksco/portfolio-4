@@ -1,22 +1,17 @@
 $.fancybox.defaults.buttons = [
     "close"
-]
+];
 
 $.fancybox.defaults.infobar = false;
 
 var $gallery = $('.gallery').isotope({
-    // set itemSelector so .grid-sizer is not used in layout
     itemSelector: '.gallery-item',
     percentPosition: true,
-    masonry: {
-        // use element for option
-        columnWidth: '.gallery-item'
-    }
-})
-
-$gallery.one('arrangeComplete', function () {
-    console.log('arrange done, just this one time');
 });
+
+// $gallery.one('arrangeComplete', function () {
+//     console.log('arrange done, just this one time');
+// });
 
 $(document).ready(function () {
     $gallery.isotope();
@@ -66,7 +61,7 @@ if (window.location.pathname == '/') {
         frameRate(60);
 
         angle = random(-PI / 16, PI / 16);
-        dropCount = random(0, width / 2);
+        dropCount = random(width / 30, width / 3);
 
         setupDrops();
 
@@ -78,8 +73,9 @@ if (window.location.pathname == '/') {
     function draw() {
         background(0);
         stroke(255, 255, 255, strokeAlpha);
+
         for (let i = 0; i < drops.length; i++) {
-            let tailX = drops[i].tail * sin(-angle) + drops[i].x;
+            const tailX = drops[i].tail * sin(-angle) + drops[i].x;
 
             line(drops[i].x, drops[i].y, tailX, drops[i].y - drops[i].tail);
         }
@@ -89,7 +85,7 @@ if (window.location.pathname == '/') {
 
     function update() {
         for (let i = 0; i < drops.length; i++) {
-            let newX = drops[i].tail * sin(angle) + drops[i].x;
+            const newX = drops[i].tail * sin(angle) + drops[i].x;
 
             drops[i].x = newX;
             drops[i].y += drops[i].velocity;
@@ -106,6 +102,7 @@ if (window.location.pathname == '/') {
         height = window.innerHeight;
         isMobile = window.innerWidth < 600
         dropCount = random(0, width / 2);
+
         updateStroke();
         resizeCanvas(windowWidth, windowHeight);
     }
