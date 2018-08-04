@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,600');
-//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 
 body,
 button,
@@ -9,15 +8,8 @@ select,
 optgroup,
 textarea {
   font-size: $base-font-size;
-  //font-family: $font__main;
-  line-height: $font__line-height-body;
+  line-height: $base-line-height;
   color: $color-text;
-
-  font-family: 'Roboto', sans-serif;
-  //font-family: 'Open Sans', sans-serif;
-  //font-family: 'arial';
-  //font-family: 'Source Sans Pro';
-
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', arial, sans-serif;
 }
 
