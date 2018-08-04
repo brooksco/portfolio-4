@@ -57,3 +57,11 @@ $font-size-xlarge: 3rem;
 
 // Transitions
 $all-transition: all 200ms ease-out;
+$fade-transition-duration: 200ms;
+
+$fade-base: 50ms;
+$fade-one: $fade-base;
+$fade-two: #{$fade-base * 2};
+$fade-three: #{$fade-base * 3};
+$fade-four: #{$fade-base * 4};
+$fade-five: #{$fade-base * 5};

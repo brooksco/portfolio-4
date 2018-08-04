@@ -51,3 +51,23 @@
 		@content;
 	}
 }
+
+@mixin fade-in($delay) {
+	opacity: 0;
+	animation: fade-in $fade-transition-duration ease-out;
+	animation-fill-mode: forwards;
+	animation-delay: $delay;
+	position: relative;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		//left: -$spacing-small;
+	}
+
+	100% {
+		opacity: 1;
+		//left: 0;
+	}
+}

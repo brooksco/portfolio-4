@@ -5,6 +5,7 @@
   margin: $spacing-large 0;
 
   &__title {
+    //@include fade-in($fade-one);
     margin: 0;
 
     a {
@@ -26,6 +27,7 @@
 // Navigation
 
 .main-navigation {
+  //@include fade-in($fade-one);
   display: block;
 
   ul {

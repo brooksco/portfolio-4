@@ -14,6 +14,7 @@
   margin: #{$spacing-large * 1.5} 0 $spacing-xlarge 0;
 
   p {
+    @include fade-in($fade-two);
     font-size: 6vw;
     max-width: 1000px;
     font-family: 'Raleway';
@@ -96,6 +97,10 @@
 
   a {
     margin-right: $spacing-small;
+  }
+
+  p {
+    @include fade-in($fade-three);
   }
 }
 

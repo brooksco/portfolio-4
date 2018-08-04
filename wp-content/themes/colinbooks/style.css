@@ -323,6 +323,12 @@ template {
 [hidden] {
   display: none; }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 body,
 button,
 input,
@@ -341,7 +347,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1.5rem 0; }
 
 h1 {
-  font-size: 3rem; }
+  opacity: 0;
+  animation: fade-in 200ms ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 100ms;
+  position: relative;
+  font-size: 13vw; }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 10rem; } }
 
 p {
   font-size: 1.25rem;
@@ -507,6 +521,11 @@ a {
 .hero-text {
   margin: 96px 0 128px 0; }
   .hero-text p {
+    opacity: 0;
+    animation: fade-in 200ms ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
+    position: relative;
     font-size: 6vw;
     max-width: 1000px;
     font-family: 'Raleway'; }
@@ -558,6 +577,13 @@ a {
 
 .entry-content a {
   margin-right: 16px; }
+
+.entry-content p {
+  opacity: 0;
+  animation: fade-in 200ms ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 150ms;
+  position: relative; }
 
 .posted-on {
   font-weight: 700; }
