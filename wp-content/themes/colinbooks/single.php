@@ -22,6 +22,8 @@ get_header();
 			// the_post_navigation();
 
 		endwhile; // End of the loop.
+
+        edit_post_link('Edit');
 		?>
 
 		</main><!-- #main -->
