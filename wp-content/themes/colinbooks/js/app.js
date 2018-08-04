@@ -17,6 +17,10 @@ $(document).ready(function () {
     $gallery.isotope();
 });
 
+window.onload(function () {
+    $gallery.isotope();
+});
+
 let width = window.innerWidth;
 let height = window.innerHeight;
 let drops = [];
