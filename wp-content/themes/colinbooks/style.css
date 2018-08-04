@@ -554,6 +554,8 @@ a {
   margin-bottom: 64px; }
   .post__title {
     margin-bottom: .5rem; }
+  .post h1 {
+    font-size: 4rem; }
   .post a {
     color: #ffffff;
     text-decoration: none; }
