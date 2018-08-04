@@ -1,10 +1,15 @@
+:root {
+	--spacing-small: 16px;
+	--spacing-medium: 32px;
+}
+
 body {
 	font-family: "Georgia", serif;
 	line-height: 1.6;
 	font-size: 16px;
 	color: #0a0a0a;
 	margin: auto;
-	padding: 0 32px;
+	padding: 0 var(--spacing-medium);
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -95,9 +100,9 @@ img {
 	padding: 12px;
 }
 
-.thesis-navigation li a {
+/*.thesis-navigation li a {*/
 	/*text-decoration: none;*/
-}
+/*}*/
 
 .thesis__head {
 	text-align: center;

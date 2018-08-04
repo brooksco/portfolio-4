@@ -17,7 +17,7 @@ $(document).ready(function () {
     $gallery.isotope();
 });
 
-window.onload(function () {
+$(window).on('load', function () {
     $gallery.isotope();
 });
 
